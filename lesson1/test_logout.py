@@ -1,6 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time 
+import sys 
 
 driver = webdriver.Chrome()
 
@@ -28,6 +29,8 @@ def test_logout():
     url_after = driver.current_url
     
     assert url_after == url_before
+
+
 
 
 
